@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>India's Journey Towards Decentralisation</title>
+<meta name="description" content="From the Constituent Assembly to the 74th Constitutional Amendment, and the unfinished promise of local self-government. A Constitution Day 2026 digital story.">
+<meta property="og:title" content="India's Journey Towards Decentralisation">
+<meta property="og:description" content="In 1992 India gave its cities constitutional recognition. Did it also give them the powers and resources to govern?">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --y:#FFDA0A; --py:#FFF6CB; --ink:#222222; --body:#555555; --muted:#6B6B6B;
+  --grey:#F1F1EE; --rule:#E5D58A; --line:#ECECE6;
+  --font:"Raleway", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --max:1120px; --text:680px;
+  --gut:max(20px, calc((100vw - var(--max)) / 2 + 20px));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important; animation:none!important}}
+body{margin:0; background:#fff; color:var(--body); font-family:var(--font); font-size:17.5px; line-height:1.7; font-variant-numeric:lining-nums; font-feature-settings:"lnum" 1; -webkit-font-smoothing:antialiased}
+main{overflow-x:clip}
+a{color:var(--ink); text-decoration:underline; text-decoration-color:var(--y); text-decoration-thickness:2px; text-underline-offset:3px}
+a:hover{background:var(--py)}
+:focus-visible{outline:3px solid var(--ink); outline-offset:3px; border-radius:4px}
+.skip{position:absolute; left:-999px; top:8px; background:var(--ink); color:#fff; padding:8px 14px; z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+.prose{max-width:var(--text)}
+.prose p{margin:0 0 1.1em}
+h1,h2,h3,h4{font-family:var(--font); font-weight:700; line-height:1.2; margin:0; color:var(--ink)}
+b, strong{color:var(--ink)}
+.eyebrow{font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--muted)}
+.small{font-size:14.5px; color:var(--muted); line-height:1.55}
+.src{font-size:13px; font-style:italic; color:var(--muted); line-height:1.5; margin-top:10px}
+.src a{color:var(--muted)}
+.lbl{display:inline-block; font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:3px 9px; border-radius:20px; color:var(--ink); vertical-align:2px; white-space:nowrap; font-style:normal}
+.lbl-shall{background:var(--y)}
+.lbl-may{background:var(--grey); box-shadow:inset 0 0 0 1px #D5D5CE}
+.lbl-note{background:#fff; box-shadow:inset 0 0 0 1px var(--rule)}
+.ico{width:44px; height:44px; border-radius:50%; background:var(--y); display:grid; place-items:center; flex:0 0 auto}
+.ico svg{width:22px; height:22px; fill:none; stroke:var(--ink); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+
+/* NAV */
+.nav{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96); backdrop-filter:blur(6px); border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex; align-items:center; gap:18px; height:56px}
+.nav .brand{font-weight:800; font-size:15px; color:var(--ink); text-decoration:none; white-space:nowrap}
+.nav .brand:hover{background:none}
+.nav ul{display:flex; gap:4px; list-style:none; margin:0 0 0 auto; padding:0; overflow-x:auto; scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a.lnk{display:block; padding:6px 12px; font-size:14.5px; font-weight:600; color:var(--body); text-decoration:none; white-space:nowrap; border-radius:20px}
+.nav a.lnk:hover{background:var(--py)}
+.nav a.lnk[aria-current="true"]{color:var(--ink); background:var(--y)}
+.nav a.lnk .n{color:var(--muted); margin-right:6px; font-weight:700}
+.nav a.lnk[aria-current="true"] .n{color:var(--ink)}
+@media (max-width:1440px){.nav .brand{display:none}}
+@media (max-width:820px){.nav ul{margin:0 -20px; padding:0 14px; width:calc(100% + 40px)} .nav a.lnk{font-size:14px; padding:6px 10px}}
+
+/* HERO */
+.hero-grid{display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); min-height:560px}
+.hero-panel{background:var(--y); padding:72px 48px 64px var(--gut); display:flex; flex-direction:column; justify-content:center}
+.hero-panel .eyebrow{color:var(--ink)}
+.hero h1{font-size:clamp(38px, 5.4vw, 66px); font-weight:800; letter-spacing:-.01em; line-height:1.08; max-width:13ch; margin:16px 0 18px}
+.hero .sub{font-style:italic; font-size:clamp(18px, 1.9vw, 21px); line-height:1.5; color:#3A3A3A; max-width:34ch; margin:0 0 30px}
+.btn{display:inline-flex; align-self:flex-start; align-items:center; gap:10px; background:var(--ink); color:#fff; text-decoration:none; font-weight:700; padding:13px 24px; border-radius:40px; font-size:16px}
+.btn:hover{background:#000; color:#fff}
+.btn svg{width:16px; height:16px}
+.hero-side{padding:72px var(--gut) 64px 48px; display:flex; flex-direction:column; justify-content:center; gap:20px}
+.hero-side .bigq{font-size:clamp(21px, 2.3vw, 27px); font-weight:600; line-height:1.4; color:var(--ink); margin:0; max-width:24ch}
+.hstats{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px; margin-top:8px}
+.hstat{background:var(--py); border-radius:10px; padding:16px 16px 14px}
+.hstat .v{font-size:28px; font-weight:800; color:var(--ink); line-height:1.1}
+.hstat .d{font-size:13.5px; line-height:1.4; margin-top:6px}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr; min-height:0} .hero-panel{padding:52px 20px 44px} .hero-side{padding:36px 20px 8px}}
+@media (max-width:520px){.hstats{grid-template-columns:1fr} .hstat{display:flex; gap:14px; align-items:baseline} .hstat .d{margin:0}}
+
+/* TIMELINE */
+.tl{padding-top:44px}
+.tl-head{display:flex; justify-content:space-between; align-items:end; gap:16px; margin-bottom:12px}
+.tl-head h2{font-size:24px}
+.tl-ctrl{display:flex; gap:8px}
+.tl-ctrl button{width:42px; height:42px; border:0; background:var(--y); border-radius:50%; cursor:pointer; color:var(--ink); font-size:18px; font-weight:700}
+.tl-ctrl button:hover{background:#F2CC00}
+.axis{position:relative; height:46px; margin:8px 9px 6px}
+.axis .line{position:absolute; left:0; right:0; top:22px; height:2px; background:var(--ink)}
+.axis .era{position:absolute; top:14px; height:18px; background:var(--py)}
+.axis .tick{position:absolute; top:28px; font-size:12px; color:var(--muted); transform:translateX(-50%)}
+.axis .tick::before{content:""; position:absolute; left:50%; top:-8px; width:1px; height:6px; background:var(--ink)}
+.axis .dot{position:absolute; top:16px; width:14px; height:14px; margin-left:-7px; border-radius:50%; background:#fff; border:2px solid var(--ink); padding:0; cursor:pointer}
+.axis .dot.on{background:var(--y); transform:scale(1.35)}
+.strip{display:flex; gap:10px; overflow-x:auto; padding:8px 2px 14px; scroll-snap-type:x proximity; scrollbar-width:thin}
+.chip{flex:0 0 auto; scroll-snap-align:start; text-align:left; background:var(--grey); border:0; border-radius:10px; padding:12px 14px; cursor:pointer; font-family:var(--font); color:var(--ink); width:176px}
+.chip:hover{background:var(--py)}
+.chip .y{display:block; font-weight:800; font-size:20px; color:var(--ink)}
+.chip .t{display:block; font-size:14px; line-height:1.3; margin-top:2px; color:var(--body)}
+.chip[aria-pressed="true"]{background:var(--y)}
+.chip[aria-pressed="true"] .t{color:var(--ink)}
+.panel{background:var(--py); border-radius:12px; padding:24px 26px; display:grid; grid-template-columns:150px 1fr; gap:6px 24px; min-height:190px}
+.panel .pd{font-weight:800; font-size:19px; color:var(--ink); line-height:1.3}
+.panel h3{font-size:22px; margin-bottom:8px}
+.panel p{margin:0 0 10px; max-width:70ch}
+.panel .who{font-size:15px}
+@media (max-width:640px){.panel{grid-template-columns:1fr; padding:20px} .chip{width:150px} .axis .dot{width:10px; height:10px; margin-left:-5px; top:18px} .axis .tick{font-size:11px}}
+
+/* CHAPTERS */
+.chapter{padding:96px 0 48px; border-top:1px solid var(--line)}
+.ch-head{display:grid; grid-template-columns:72px 1fr; gap:24px; margin-bottom:44px; align-items:start}
+.ch-num{width:64px; height:64px; border-radius:50%; background:var(--y); display:grid; place-items:center; font-weight:800; font-size:24px; color:var(--ink); margin-top:4px}
+.ch-head h2{font-size:clamp(30px, 4.4vw, 46px); letter-spacing:-.005em; margin:8px 0 14px; max-width:22ch}
+.ch-head .dek{font-style:italic; font-size:19px; line-height:1.55; color:var(--muted); max-width:48ch; margin:0}
+@media (max-width:700px){.ch-head{grid-template-columns:1fr; gap:10px} .ch-num{width:52px; height:52px; font-size:20px}}
+.h3{font-size:clamp(22px, 2.6vw, 28px); margin:60px 0 18px}
+.two{display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:56px; align-items:start}
+@media (max-width:960px){.two{grid-template-columns:1fr; gap:24px}}
+.aside{background:var(--grey); border-radius:12px; padding:20px 22px; font-size:16px}
+.aside h4{font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:8px}
+.aside p{margin:0 0 8px}
+
+/* QUOTES */
+figure.quote{margin:32px 0; padding:26px 30px 24px; background:var(--py); border-radius:12px}
+figure.quote::before{content:""; display:block; width:40px; height:40px; border-radius:50%; margin-bottom:14px; background:var(--y) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23222222'%3E%3Cpath d='M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z'/%3E%3C/svg%3E") center/22px no-repeat}
+figure.quote blockquote{margin:0; font-size:clamp(19px, 2.2vw, 24px); font-weight:600; line-height:1.45; color:var(--ink)}
+figure.quote figcaption{margin-top:12px; font-size:15px}
+figure.quote figcaption .ref{display:block; font-size:13px; font-style:italic; color:var(--muted)}
+
+/* VOICES (2x2) */
+.voices{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px; margin-top:8px}
+.voice{background:var(--py); border-radius:12px; padding:24px 26px}
+.voice .tag{font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+.voice h4{font-size:21px; margin:6px 0 10px}
+.voice p{margin:0 0 10px; font-size:16.5px}
+.voice q, .mini q, .prose q{font-weight:600; color:var(--ink); quotes:'"' '"'}
+@media (max-width:760px){.voices{grid-template-columns:1fr}}
+
+/* YELLOW BAND */
+.callout{background:var(--y); margin:64px calc(50% - 50vw) 24px; padding:48px max(20px, calc(50vw - 540px))}
+.callout .eyebrow{color:var(--ink)}
+.callout p{font-size:clamp(21px, 2.6vw, 28px); font-weight:700; line-height:1.35; color:var(--ink); margin:10px 0 0; max-width:38ch}
+
+.doc{background:var(--py); padding:26px 28px; border-radius:12px}
+.doc p.art{font-size:19px; font-weight:600; color:var(--ink); line-height:1.5; margin:10px 0 8px}
+
+/* NUMBERED STEPS ON A THIN YELLOW LINE */
+.steps{list-style:none; margin:24px 0 0; padding:0; position:relative; counter-reset:s}
+.steps::before{content:""; position:absolute; left:19px; top:10px; bottom:40px; width:3px; background:var(--y)}
+.steps > li{counter-increment:s; position:relative; padding:0 0 40px 66px}
+.steps > li::before{content:counter(s); position:absolute; left:0; top:0; width:41px; height:41px; border-radius:50%; background:var(--y); color:var(--ink); font-weight:800; font-size:17px; display:grid; place-items:center}
+.steps .when{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); padding-top:9px}
+.steps h4{font-size:22px; margin:4px 0 10px}
+.steps p{margin:0 0 10px; max-width:68ch}
+.result{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:3px 10px; border-radius:20px; margin-bottom:10px; color:var(--ink)}
+.result.f{background:var(--grey); box-shadow:inset 0 0 0 1px #D5D5CE}
+.result.p{background:var(--y)}
+.cols3{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; margin:20px 0 24px}
+@media (max-width:820px){.cols3{grid-template-columns:1fr}}
+.mini{background:var(--py); border-radius:12px; padding:20px 22px; font-size:16px}
+.mini b{font-size:18px; display:block; margin-bottom:6px}
+
+.numbox{display:grid; grid-template-columns:1fr auto 1fr; gap:16px; align-items:stretch; margin:24px 0 0}
+.numbox .b{background:var(--py); border-radius:12px; padding:20px 22px; font-size:15.5px}
+.numbox .b strong{display:block; font-size:34px; font-weight:800; line-height:1.15; margin-bottom:4px}
+.numbox .arr{align-self:center; font-style:italic; color:var(--muted)}
+@media (max-width:560px){.numbox{grid-template-columns:1fr} .numbox .arr{justify-self:start}}
+
+/* ARCHITECTURE */
+.arch{margin-top:20px}
+.arch-top{background:var(--y); color:var(--ink); border-radius:12px; padding:24px; text-align:center}
+.arch-top .k{font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700}
+.arch-top h3{font-size:clamp(22px,3vw,30px); margin:6px 0 4px}
+.arch-top p{margin:0; font-size:15px; font-style:italic; color:#3A3A3A}
+.stem{width:2px; height:26px; background:var(--ink); margin:0 auto}
+.types{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:14px}
+.type{background:var(--py); border-radius:12px; padding:16px 18px}
+.type b{font-size:18px; display:block}
+.type span{font-size:15px}
+@media (max-width:640px){.types{grid-template-columns:1fr}}
+.split{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:26px}
+@media (max-width:820px){.split{grid-template-columns:1fr}}
+.col{border-radius:12px; padding:20px}
+.col.shall{background:var(--py)}
+.col.may{background:var(--grey)}
+.col > h4{font-size:13px; letter-spacing:.12em; text-transform:uppercase; margin:0 0 6px; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.col > p.small{margin:0 0 12px}
+details.art{background:#fff; border-radius:8px; margin:8px 0}
+details.art summary{cursor:pointer; list-style:none; padding:12px 42px 12px 14px; position:relative; font-weight:600; font-size:15.5px; line-height:1.35; color:var(--ink)}
+details.art summary::-webkit-details-marker{display:none}
+details.art summary::after{content:"+"; position:absolute; right:12px; top:9px; width:22px; height:22px; border-radius:50%; background:var(--grey); display:grid; place-items:center; font-size:17px; line-height:22px; text-align:center; font-weight:700}
+details.art[open] summary::after{content:"\2013"; background:var(--y)}
+details.art summary .a{font-weight:800; margin-right:8px}
+details.art .body{padding:0 14px 14px; font-size:15.5px}
+details.art .body p{margin:0 0 8px}
+.sched{margin-top:18px; border-radius:12px; padding:22px; background:var(--grey)}
+.sched-head{display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px; align-items:center; margin-bottom:14px}
+.sched-head h4{font-size:21px}
+.sched ol{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(6, minmax(0,1fr)); gap:8px; counter-reset:f}
+.sched li{counter-increment:f; border-radius:8px; padding:44px 10px 12px; position:relative; font-size:14px; line-height:1.35; background:#fff; color:var(--ink)}
+.sched li::before{content:counter(f); position:absolute; left:10px; top:10px; width:26px; height:26px; border-radius:50%; background:var(--y); font-weight:800; font-size:12.5px; display:grid; place-items:center}
+@media (max-width:1000px){.sched ol{grid-template-columns:repeat(3, minmax(0,1fr))}}
+@media (max-width:640px){.sched ol{grid-template-columns:repeat(2, minmax(0,1fr))}}
+
+/* EVIDENCE */
+.stats{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:14px; margin:26px 0 10px}
+.stat{background:var(--py); border-radius:12px; padding:22px 20px 18px}
+.stat .v{font-weight:800; font-size:clamp(38px, 4.4vw, 52px); line-height:1; color:var(--ink)}
+.stat .d{font-size:15.5px; margin:10px 0 6px; line-height:1.4; color:var(--ink)}
+@media (max-width:900px){.stats{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.stats{grid-template-columns:1fr}}
+.dim{display:grid; grid-template-columns:260px minmax(0,1fr); gap:32px; padding:36px 0; border-top:1px solid var(--line)}
+.dim .promise{font-size:15px}
+.dim .promise .ico{margin-bottom:14px}
+.dim .promise h4{font-size:22px; margin:4px 0 8px}
+.dim .promise .k{font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+@media (max-width:820px){.dim{grid-template-columns:1fr; gap:14px}}
+.dots-row{display:grid; grid-template-columns:minmax(0, 260px) auto; gap:6px 18px; align-items:center; padding:12px 0; border-bottom:1px dotted var(--rule)}
+.dots-row:last-of-type{border-bottom:0}
+.dots-row .lab{font-size:16px; line-height:1.35; color:var(--ink)}
+.dots-row .lab .small{display:block; font-style:italic}
+.dots{display:grid; grid-template-columns:repeat(35, 10px); gap:3px}
+.dots i{width:10px; height:10px; border-radius:50%; border:1.5px solid #C9C9C2; display:block}
+.dots i.f{background:var(--y); border-color:var(--ink)}
+.dots-row .cnt{grid-column:2; font-weight:800; font-size:18px; color:var(--ink)}
+@media (max-width:820px){.dots-row{grid-template-columns:1fr} .dots-row .cnt{grid-column:1} .dots{grid-template-columns:repeat(18, 10px)}}
+.bars18{display:grid; gap:12px; margin:8px 0}
+.b18 .lab{font-size:15px; margin-bottom:5px; color:var(--ink)}
+.sq{display:grid; grid-template-columns:repeat(18, minmax(0, 22px)); gap:3px}
+.sq i{aspect-ratio:1; border:1.5px solid #C9C9C2; display:block; border-radius:3px}
+.sq i.f{background:var(--y); border-color:var(--ink)}
+.sq.t i.f{background:#555; border-color:#555}
+.pbar{height:26px; border:1.5px solid var(--ink); border-radius:20px; position:relative; background:#fff; margin:10px 0 6px; overflow:hidden}
+.pbar span{position:absolute; left:0; top:0; bottom:0; background:var(--y); border-right:1.5px solid var(--ink)}
+.pbar-l{display:flex; justify-content:space-between; gap:12px; font-size:14px}
+.ev p{margin:0 0 12px; max-width:66ch}
+.ev .num{font-weight:800; color:var(--ink)}
+.worked{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; margin:22px 0 6px}
+@media (max-width:820px){.worked{grid-template-columns:1fr}}
+.worked > div{background:var(--py); padding:20px 22px; border-radius:12px; font-size:15.5px}
+.worked .ico{margin-bottom:12px}
+.worked b{font-size:18px; display:block; margin-bottom:4px}
+
+/* REFORMS */
+.reforms{list-style:none; margin:24px 0 0; padding:0; counter-reset:r}
+.reforms > li{counter-increment:r; display:grid; grid-template-columns:44px minmax(0,1fr) 230px; gap:22px; padding:26px 0; border-top:1px solid var(--line)}
+.reforms > li::before{content:counter(r); width:40px; height:40px; border-radius:50%; background:var(--y); color:var(--ink); font-weight:800; font-size:17px; display:grid; place-items:center}
+.reforms h4{font-size:21px; margin:6px 0 8px}
+.reforms p{margin:0 0 8px; font-size:16.5px; max-width:62ch}
+.route{font-size:14px; padding-top:8px}
+.route .r{display:block; margin-bottom:8px}
+@media (max-width:820px){.reforms > li{grid-template-columns:40px minmax(0,1fr); gap:16px} .route{grid-column:2; padding-top:0}}
+.legend-route{display:flex; flex-wrap:wrap; gap:10px 18px; font-size:14px; margin:6px 0 0}
+.counter{background:var(--grey); border-radius:12px; padding:26px 28px; margin:40px 0 0}
+.counter h4{font-size:21px; margin-bottom:8px}
+.counter p{margin:0 0 10px; max-width:70ch}
+
+/* FINALE: yellow side panel */
+.finale{display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.3fr)}
+.fin-panel{background:var(--y); padding:96px 48px 96px var(--gut)}
+.fin-panel .eyebrow{color:var(--ink)}
+.fin-panel h2{font-size:clamp(30px, 4vw, 48px); font-weight:800; line-height:1.12; margin:14px 0 0; max-width:12ch}
+.fin-body{background:var(--py); padding:96px var(--gut) 90px 56px}
+.fin-body p{font-size:clamp(17.5px, 1.8vw, 19.5px); line-height:1.7; max-width:40em; margin:0 0 20px; color:#444}
+.fin-body p.last{color:var(--ink); font-weight:700; font-size:clamp(19px, 2.1vw, 23px); line-height:1.5; margin-top:30px}
+@media (max-width:900px){.finale{grid-template-columns:1fr} .fin-panel{padding:56px 20px 44px} .fin-body{padding:40px 20px 56px}}
+
+/* SOURCES */
+.sources{padding:72px 0 60px; font-size:15.5px}
+.sources h2{font-size:30px; margin-bottom:12px}
+.sources h3{font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin:30px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--rule)}
+.sources ul{margin:0; padding-left:20px}
+.sources li{margin-bottom:7px}
+.srcgrid{display:grid; grid-template-columns:1fr 1fr; gap:10px 48px}
+@media (max-width:820px){.srcgrid{grid-template-columns:1fr}}
+footer{background:var(--grey); padding:26px 0 36px; font-size:14px; font-style:italic; color:var(--muted)}
+
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease}
+.reveal.in{opacity:1; transform:none}
+.no-js .reveal{opacity:1; transform:none}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#beginning">Skip to the story</a>
+
+<nav class="nav" aria-label="Chapters">
+  <div class="wrap">
+    <a class="brand" href="#top">Decentralisation · 1946–2026</a>
+    <ul>
+      <li><a class="lnk" href="#beginning"><span class="n">1</span>The Beginning</a></li>
+      <li><a class="lnk" href="#road"><span class="n">2</span>The Road to 1992</a></li>
+      <li><a class="lnk" href="#amendment"><span class="n">3</span>The 74th Amendment</a></li>
+      <li><a class="lnk" href="#decades"><span class="n">4</span>Three Decades Later</a></li>
+      <li><a class="lnk" href="#promise"><span class="n">5</span>The Unfinished Promise</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-panel">
+      <div class="eyebrow">Constitution Day | 26 November 2026</div>
+      <h1>India's Journey Towards Decentralisation</h1>
+      <p class="sub">From the Constituent Assembly to the 74th Constitutional Amendment, and the unfinished promise of local self-government.</p>
+      <a class="btn" href="#beginning">Explore the journey
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v11M3 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+    </div>
+    <div class="hero-side">
+      <div class="eyebrow">The question</div>
+      <p class="bigq">India gave urban local governments constitutional recognition in 1992. Did it also give them the powers and resources to govern?</p>
+      <div class="hstats">
+        <div class="hstat"><div class="v">1948</div><div class="d">Article 40 makes village panchayats a Directive Principle</div></div>
+        <div class="hstat"><div class="v">1993</div><div class="d">The 74th Amendment brings municipalities into the Constitution</div></div>
+        <div class="hstat"><div class="v">42%</div><div class="d">of the 74th Amendment implemented by States, on average (ASICS 2023)</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <section class="tl" aria-labelledby="tl-title">
+      <div class="tl-head">
+        <div>
+          <div class="eyebrow">Milestones</div>
+          <h2 id="tl-title">Timeline, 1946 to 2026</h2>
+        </div>
+        <div class="tl-ctrl">
+          <button type="button" id="tl-prev" aria-label="Previous event">&#8592;</button>
+          <button type="button" id="tl-next" aria-label="Next event">&#8594;</button>
+        </div>
+      </div>
+      <div class="axis" id="axis" aria-hidden="true"></div>
+      <div class="strip" id="strip" role="group" aria-label="Timeline events. Select one to read more."></div>
+      <div class="panel" id="panel" aria-live="polite"></div>
+      <noscript><p class="small">The interactive timeline needs JavaScript. Every event is also covered in the chapters below.</p></noscript>
+    </section>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ CHAPTER 1 ============ -->
+<section class="chapter" id="beginning" aria-labelledby="c1">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div class="ch-num" aria-hidden="true">1</div>
+      <div>
+        <div class="eyebrow">The Constituent Assembly, 1946–1949</div>
+        <h2 id="c1">The constitutional question: where should democratic power reside?</h2>
+        <p class="dek">The Draft Constitution of 1948 made no provision for local government. The Constituent Assembly debated the omission through November 1948 and settled on a Directive Principle.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="prose reveal">
+        <p>The Drafting Committee designed a Republic with two levels of government, the Union and the provinces, and vested rights in individual citizens. Village self-government, central to Gandhi's vision, had no place in the draft. B.R. Ambedkar defended this choice when he moved the Draft Constitution for consideration on 4 November 1948.</p>
+      </div>
+      <aside class="aside reveal">
+        <h4>A rural debate</h4>
+        <p>In 1951, nearly 83% of Indians lived in villages. The Assembly's debate centred on panchayats, and towns came up mainly in discussions on local finance. No framework for municipal government was proposed.</p>
+      </aside>
+    </div>
+
+    <figure class="quote reveal">
+      <blockquote>"What is the village but a sink of localism, a den of ignorance, narrow-mindedness and communalism? I am glad that the Draft Constitution has discarded the village and adopted the individual as its unit."</blockquote>
+      <figcaption><b>B.R. Ambedkar</b>, moving the Draft Constitution, 4 November 1948
+        <span class="ref">Constituent Assembly Debates, Vol. VII · read in the <a href="https://www.constitutionofindia.net/debates/04-nov-1948/">constitutionofindia.net transcription</a>; page number not confirmed</span></figcaption>
+    </figure>
+
+    <h3 class="h3 reveal">Four positions in the Assembly</h3>
+    <div class="voices reveal">
+      <article class="voice">
+        <div class="tag">The individual as the unit</div>
+        <h4>B.R. Ambedkar</h4>
+        <p>Ambedkar's concern was the village as it existed, organised around caste and dominated by a few families. A Constitution that vested rights in individuals required local institutions that answered to equal citizenship.</p>
+        <p class="small">Read alongside his defence of fundamental rights, the argument sets a condition for decentralisation: local institutions must protect the individual citizen.</p>
+      </article>
+      <article class="voice">
+        <div class="tag">Decentralisation as a safeguard</div>
+        <h4>Damodar Swarup Seth and Arun Chandra Guha</h4>
+        <p>Seth wanted India to be "a Union of small autonomous republic[s]" and argued that <q>the only method of safeguarding against totalitarianism and fascism is that power should be decentralised to the greatest extent.</q> Guha, speaking the next day, tied a strong Union to strong local institutions: <q>We cannot have a strong Centre without strong limbs.</q></p>
+        <p class="src">Seth, 5 Nov 1948, CAD Vol. VII pp. 212–213 · Guha, 6 Nov 1948, p. 256 · <a href="https://eparlib.sansad.in/bitstream/123456789/762998/1/cad_05-11-1948.pdf">5 Nov record</a> · <a href="https://eparlib.sansad.in/bitstream/123456789/762999/1/cad_06-11-1948.pdf">6 Nov record</a></p>
+      </article>
+      <article class="voice">
+        <div class="tag">The risk of elite capture</div>
+        <h4>Mono Mohan Das and N.G. Ranga</h4>
+        <p>Das warned on 8 November that, without education and safeguards, panchayats would place power with zamindars, talukdars, mahajans and moneylenders (paraphrased). Ranga argued the next day that participation was the remedy, and that the State should set up panchayats in every village <q>to help our villagers to gain training in self-government.</q></p>
+        <p class="src">Das, 8 Nov 1948 (summary; <a href="https://www.constitutionofindia.net/debates/08-nov-1948/">transcription</a>) · Ranga, 9 Nov 1948, CAD Vol. VII p. 351 · <a href="https://eparlib.sansad.in/bitstream/123456789/763002/1/cad_09-11-1948.pdf">9 Nov record</a></p>
+      </article>
+      <article class="voice">
+        <div class="tag">A long-term objective</div>
+        <h4>M. Ananthasayanam Ayyangar</h4>
+        <p>Ayyangar supported a Constitution "based upon autonomous village republics" in principle, but saw no institutions ready to carry it: <q>I agree this ought to be our objective. But where are these republics? They have to be brought into existence.</q> K.T. Shah's proposal on 17 November to organise States as groups of village panchayats was negatived.</p>
+        <p class="src">Ayyangar, 9 Nov 1948, CAD Vol. VII p. 352 · Shah, 17 Nov 1948 (<a href="https://www.constitutionofindia.net/debates/17-nov-1948/">transcription</a>)</p>
+      </article>
+    </div>
+
+    <h3 class="h3 reveal">Article 40 and its limits</h3>
+    <div class="two">
+      <div class="prose reveal">
+        <p>On 22 November 1948, K. Santhanam moved Draft Article 31-A, placing village panchayats among the Directive Principles. He left out conditions other members had sought, such as village self-sufficiency, because powers, area and functions would vary from province to province and it was "not desirable that any hard and fast direction should be given in the Constitution." Ambedkar accepted it in one sentence: <q>Sir, I accept the amendment.</q> The article was adopted the same day.</p>
+        <p>Article 37 makes Directive Principles unenforceable in court. Article 40 placed a duty on the State to organise panchayats, with no remedy where a State failed to act and no protection against dissolution. Satish Chandra, who had sought Fundamental Right status for panchayats, recorded in November 1949 that they had been placed among the Directive Principles instead.</p>
+        <p class="src">Santhanam and Ambedkar, 22 Nov 1948, CAD Vol. VII p. 520 (<a href="https://eparlib.sansad.in/bitstream/123456789/763030/1/cad_22-11-1948.pdf">record</a>) · Satish Chandra, 24 Nov 1949, CAD Vol. XI (<a href="https://www.constitutionofindia.net/debates/24-nov-1949/">transcription</a>)</p>
+      </div>
+      <div class="doc reveal">
+        <div class="eyebrow">Article 40, Constitution of India</div>
+        <p class="art">"The State shall take steps to organise village panchayats and endow them with such powers and authority as may be necessary to enable them to function as units of self-government."</p>
+        <p class="small">Adopted as Draft Article 31-A on 22 November 1948. Under Article 37, Directive Principles are not enforceable by any court.</p>
+      </div>
+    </div>
+
+    <h3 class="h3 reveal">Municipalities in the debate</h3>
+    <div class="two">
+      <div class="prose reveal">
+        <p>Municipalities entered the debate through their finances. R.K. Sidhwa of the Central Provinces described local bodies as "the pivots of the social and economic life of the country" and argued that provinces had taken over the taxes that should fund them.</p>
+        <figure class="quote">
+          <blockquote>"More than 50 per cent of the local bodies have been superseded by Provincial Governments… This has left the local bodies mere skeletons today."</blockquote>
+          <figcaption><b>R.K. Sidhwa</b>, 6 November 1948
+            <span class="ref">CAD Vol. VII pp. 265–266 · <a href="https://eparlib.sansad.in/bitstream/123456789/762999/1/cad_06-11-1948.pdf">Lok Sabha Digital Library</a></span></figcaption>
+        </figure>
+        <p>In August 1949, the Assembly capped the tax on professions available to local bodies (now Article 276). Shibban Lal Saksena argued that local bodies were "practically starved of finances." Ambedkar's reply set out their constitutional position: <q>the local authority is purely a creation of the State.</q> Local government was placed in Entry 5 of the State List, leaving the existence, powers and finances of municipalities to each State legislature.</p>
+        <p class="src">9 Aug 1949, debate on Draft Art. 256, CAD Vol. IX (<a href="https://future.indiankanoon.org/doc/128766/">reproduction</a>; page not confirmed)</p>
+      </div>
+      <aside class="aside reveal">
+        <h4>Town republics</h4>
+        <p>On 5 November 1948, H.V. Kamath said the world would have to "decentralise and establish village republics and town republics." It is one of the few references to self-governing towns in the debates.</p>
+        <p class="src">CAD Vol. VII pp. 219–220</p>
+      </aside>
+    </div>
+
+    <div class="callout reveal">
+      <div class="eyebrow">The open question</div>
+      <p>If the Assembly accepted local self-government as a principle in 1948, why did panchayats and municipalities wait more than four decades for constitutional protection?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 2 ============ -->
+<section class="chapter" id="road" aria-labelledby="c2">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div class="ch-num" aria-hidden="true">2</div>
+      <div>
+        <div class="eyebrow">1950 to 1992</div>
+        <h2 id="c2">The long road to constitutional recognition</h2>
+        <p class="dek">Constitutional status for local government took three Bills between 1989 and 1992. Each turned on the place of State governments in a three-tier system.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="prose reveal">
+        <p>Article 40 led to Panchayati Raj legislation across States after the Balwantrai Mehta study team recommended democratic decentralisation in 1957. Municipalities remained creations of State law. State governments postponed municipal elections, superseded elected councils and transferred water supply, planning and housing to boards and development authorities accountable to the State.</p>
+        <p>Municipal finances weakened as cities grew. The Joint Committee that examined the urban Bill in 1992 recorded the trend.</p>
+      </div>
+      <aside class="aside reveal">
+        <h4>Statement of Objects and Reasons, 1991</h4>
+        <p>Local bodies had "become weak and ineffective" owing to "the failure to hold regular elections, prolonged supersessions and inadequate devolution of powers and functions."</p>
+        <p class="src">Statement of Objects and Reasons, Constitution (Seventy-third Amendment) Bill, 1991, signed by Sheila Kaul (<a href="https://mohua.gov.in/upload/uploadfiles/files/ConsAct74.pdf">MoHUA text of the Act</a>)</p>
+      </aside>
+    </div>
+
+    <div class="numbox reveal" role="group" aria-label="Municipal share of tax revenue fell while the urban population grew">
+      <div class="b"><strong>8% → 3.4%</strong>Municipal share of India's total tax revenue, 1960-61 to 1986-87</div>
+      <div class="arr" aria-hidden="true">while</div>
+      <div class="b"><strong>16% → 24%</strong>Urban share of India's population over roughly the same period</div>
+    </div>
+    <p class="src reveal">Joint Committee on the Constitution (Seventy-Third Amendment) Bill, 1991, report presented 14 July 1992, para 2.11 (<a href="https://eparlib.sansad.in/bitstream/123456789/757718/1/jcb_10_1992_constitution_73rd_amendment_eng.pdf">report</a>). The committee also noted that "almost one-third of the properties located in the cities are exempted from tax" (para 2.14).</p>
+
+    <h3 class="h3 reveal">Three Bills, 1989 to 1992</h3>
+    <ol class="steps">
+      <li class="fail reveal">
+        <div class="when">May to October 1989</div>
+        <h4>The 64th and 65th Amendment Bills, 1989</h4>
+        <span class="result f">Did not become law</span>
+        <p>The Constitution (64th Amendment) Bill on panchayats was introduced on 15 May 1989, and the (65th Amendment) Bill on Nagarpalikas on 7 August. The Bills provided for five-year terms, elections within six months of a dissolution, reservations for SCs, STs and women, and finance commissions to review local finances. For cities, Rajiv Gandhi proposed directly elected Wards Committees in every city of one lakh or more.</p>
+        <p>The Bills gave the Election Commission of India and the Comptroller and Auditor General a role in local governance. Opposition parties, several in power in States, saw this as a direct channel between the Union and local bodies that bypassed State governments. TDP's C. Madhava Reddi argued the panchayat Bill was "outside the competence of this House to legislate"; Syed Shahabuddin opposed the Nagarpalika Bill "not on merits but on constitutional grounds", citing the State List. The Bills were also introduced months before a general election.</p>
+        <p>The Lok Sabha passed both Bills in August 1989. In October, each secured a majority in the Rajya Sabha but fell short of the two-thirds required for a constitutional amendment, at 158&ndash;83 and 157&ndash;83 according to press reports.</p>
+        <p class="src">Lok Sabha debates, <a href="https://eparlib.nic.in/bitstream/123456789/820420/1/08_XIII_15-05-1989_p20_p69_PII.pdf">15 May 1989</a> and <a href="https://eparlib.nic.in/bitstream/123456789/808988/1/pms_08_14_07-08-1989.pdf">7 August 1989</a>; vote figures from a PTI report, not from the Rajya Sabha record. The Rajya Sabha debate of 16 August 1989, including Murasoli Maran's speech, could not be retrieved for this project, so his position is not characterised here.</p>
+      </li>
+      <li class="fail reveal">
+        <div class="when">September 1990 to March 1991</div>
+        <h4>The National Front Bill, 1990</h4>
+        <span class="result f">Lapsed</span>
+        <p>The V.P. Singh government introduced a single Bill covering panchayats and Nagarpalikas. Secondary accounts describe it as giving State legislatures more say over local powers. The government fell in November 1990, and the Bill lapsed without a vote when the Lok Sabha was dissolved in 1991.</p>
+        <p class="src">Business Advisory Committee, Lok Sabha, 1990, lists "The Constitution Amendment Bill, 1990 re: Panchayati Raj and Nagarpalikas" as a single Bill. Its official number could not be confirmed and is not given here.</p>
+      </li>
+      <li class="pass reveal">
+        <div class="when">September 1991 to December 1992</div>
+        <h4>The 72nd and 73rd Amendment Bills, 1991</h4>
+        <span class="result p">Enacted</span>
+        <p>On 16 September 1991, the P.V. Narasimha Rao government introduced the Constitution (72nd Amendment) Bill on panchayats, piloted by G. Venkatswamy, and the Constitution (73rd Amendment) Bill on municipalities, piloted by Sheila Kaul, Minister of Urban Development. Both were referred to Joint Committees of the two Houses in December 1991.</p>
+        <p class="src">Lok Sabha, <a href="https://eparlib.sansad.in/bitstream/123456789/8989/1/10_I_16091991_p49_p55_t31.pdf">16 September 1991</a> and <a href="https://eparlib.nic.in/bitstream/123456789/824320/1/10_II_20-12-1991_p557_p559_PII.pdf">20 December 1991</a></p>
+      </li>
+    </ol>
+
+    <h3 class="h3 reveal">The Joint Committee on the urban Bill</h3>
+    <div class="two">
+      <div class="prose reveal">
+        <p>Chaired by K.P. Singh Deo, the Joint Committee held 13 sittings, received 40 memoranda and 36 questionnaire responses, and heard oral evidence from ten witnesses. They included Prof. Abhijit Datta of the Indian Institute of Public Administration, K. Narayanaswamy of the All India Council of Mayors, K.C. Sivaramakrishnan of the National Institute of Urban Affairs and M.N. Buch of the National Centre for Human Settlement and Environment.</p>
+        <p>The committee strengthened the Bill's institutional design. It added District Planning Committees, and Metropolitan Planning Committees for India's 23 metropolitan cities, where development authorities were nominated bodies with no democratic base. It made Wards Committees mandatory in municipalities of three lakh or more, to bring large councils closer to residents. It also added a duty on the Union Finance Commission to recommend measures to supplement municipal resources, and two new items to the Twelfth Schedule.</p>
+        <p>The committee also widened State discretion. Rotation of reserved seats was made optional, and the conduct of municipal elections was left to State law. Article 243W, under which a State legislature "may" endow municipalities with powers, was renumbered without change. The report gives no reason for retaining "may".</p>
+        <p class="src">Report presented 14 July 1992: paras 1.5–1.9 (process), 1.20 (Wards Committees), 1.33–1.36 (planning committees), 1.39 (Art. 280), 1.40 (Twelfth Schedule), Appendix V (witnesses). <a href="https://eparlib.sansad.in/bitstream/123456789/757718/1/jcb_10_1992_constitution_73rd_amendment_eng.pdf">Read the report</a>.</p>
+      </div>
+      <div class="reveal">
+        <figure class="quote" style="margin-top:0">
+          <blockquote>"In an overcentralized top-heavy federal set-up," calls for devolution would be "a cry in wilderness."</blockquote>
+          <figcaption><b>S. Viduthalai Virumbi</b>, minute of dissent, 4 July 1992
+            <span class="ref">Joint Committee report, p. xvii (approx.)</span></figcaption>
+        </figure>
+        <p class="small">The only minute of dissent to the urban report. Virumbi described the Twelfth Schedule as "a needless exercise" that repeated the State List, warned of friction between States and local bodies, and argued that devolution to cities required the Union to first share more powers and resources with States. The objection was federal, and the final text reflects it.</p>
+        <p class="small">The rural Bill was examined by a separate Joint Committee chaired by Nathu Ram Mirdha. Its report could not be accessed for this project. According to the Minister's statement in the Lok Sabha on 1 December 1992, it recommended direct elections at every tier.</p>
+      </div>
+    </div>
+
+    <h3 class="h3 reveal">The Lok Sabha debate, December 1992</h3>
+    <div class="cols3 reveal">
+      <div class="mini"><b>G. Venkatswamy</b>Minister of State, Rural Development, moving the panchayat Bill on 1 December: <q>We do not intend to bypass the States in any manner.</q><p class="src">LS, 1 Dec 1992, col. c. 713 · <a href="https://eparlib.sansad.in/bitstream/123456789/883134/1/10_V_01-12-1992_p362_p367_PII.pdf">record</a></p></div>
+      <div class="mini"><b>Kashiram Rana</b>BJP, Surat, on the urban Bill: supported the Bill, argued that functions were being devolved without funds, and proposed that <q>the Central Government should directly give the share to the city.</q><p class="src">LS, 1 Dec 1992, col. c. 736 · <a href="https://eparlib.sansad.in/bitstream/123456789/883137/1/10_V_01-12-1992_p372_p376_PII.pdf">record</a></p></div>
+      <div class="mini"><b>Somnath Chatterjee</b>CPI(M), on 21 December: opposed excluding the Darjeeling hills from the panchayat provisions, which would have denied women, SCs and STs there the new reservations. A compromise reached overnight limited the exclusion.<p class="src">LS, 21–22 Dec 1992 · <a href="https://eparlib.nic.in/bitstream/123456789/824432/1/10_V_21-12-1992_p347_p361_PII.pdf">record</a></p></div>
+    </div>
+    <div class="prose reveal">
+      <p>On 21 December 1992, the Lok Sabha voted 452 to 1 to take up the panchayat Bill. Prime Minister P.V. Narasimha Rao, who also held the Rural Development portfolio, intervened briefly before the vote. The final texts replaced the 1989 roles of the Election Commission of India and the CAG with State Election Commissions and audit under State law. The Lok Sabha passed both Bills on 22 December and the Rajya Sabha on 23 December. Consensus was secured by placing implementation with the States.</p>
+      <p class="src">Division No. 6, LS, 21 Dec 1992. Column references are approximate (scanned record). Rajya Sabha passage per the Acts' legislative history; the debate itself was not read.</p>
+    </div>
+    <div class="doc reveal" style="margin-top:26px">
+      <div class="eyebrow">Why the numbers changed</div>
+      <p style="margin:8px 0 0">Amendment Acts are numbered in the order they are enacted. The 71st (August 1992) and 72nd (December 1992) Amendments were enacted first, so the <b>72nd Amendment Bill, 1991</b> on panchayats became the <b>73rd Amendment Act</b>, and the <b>73rd Amendment Bill, 1991</b> on municipalities became the <b>74th Amendment Act</b>. Both received presidential assent on 20 April 1993.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 3 ============ -->
+<section class="chapter" id="amendment" aria-labelledby="c3">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div class="ch-num" aria-hidden="true">3</div>
+      <div>
+        <div class="eyebrow">In force from 1 June 1993</div>
+        <h2 id="c3">The 74th Amendment: what did India promise its cities?</h2>
+        <p class="dek">Part IXA guaranteed the existence, composition and continuity of municipalities. Their powers, finances and staff were left to State legislatures.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="prose reveal">
+        <p>The 73rd Amendment (Part IX, in force from 24 April 1993) covered rural panchayats, with a Gram Sabha and three tiers. The 74th Amendment (Part IXA, Articles 243P to 243ZG, and the Twelfth Schedule) covered urban areas. Both follow one design: mandatory elections and reservations, State Election Commissions and State Finance Commissions, with devolution of powers left to State law.</p>
+        <p>The diagram groups the urban provisions by the verb the Constitution uses. Provisions that say <span class="lbl lbl-shall">shall</span> bind the States, and courts have enforced them. Provisions that say <span class="lbl lbl-may">may</span> leave the decision to the State legislature. Select an article to read what it provides.</p>
+      </div>
+      <aside class="aside reveal">
+        <h4>Article 243W</h4>
+        <p>Article 243W: "the Legislature of a State <b>may</b>, by law, endow the Municipalities with such powers and authority as may be necessary to enable them to function as institutions of self-government", including functions "in relation to the matters listed in the Twelfth Schedule."</p>
+        <p class="small">The Twelfth Schedule lists matters a State legislature may assign to municipalities. It does not transfer any function by itself.</p>
+      </aside>
+    </div>
+
+    <div class="arch reveal" role="figure" aria-label="Diagram of the 74th Amendment's architecture">
+      <div class="arch-top">
+        <div class="k">Constitution of India</div>
+        <h3>Part IXA: the municipalities</h3>
+        <p>Inserted by the Constitution (Seventy-fourth Amendment) Act, 1992</p>
+      </div>
+      <div class="stem"></div>
+      <div class="types">
+        <div class="type"><b>Nagar Panchayat</b><span>for a "transitional area", moving from rural to urban</span></div>
+        <div class="type"><b>Municipal Council</b><span>for a smaller urban area</span></div>
+        <div class="type"><b>Municipal Corporation</b><span>for a larger urban area</span></div>
+      </div>
+      <p class="small" style="text-align:center; margin:8px 0 0">Article 243Q. The State decides the criteria. Areas the Governor notifies as industrial townships may be exempted.</p>
+
+      <div class="split">
+        <div class="col shall">
+          <h4><span class="lbl lbl-shall">shall</span>What the Constitution requires</h4>
+          <p class="small">Mandatory provisions: the existence, composition and continuity of municipalities.</p>
+          <details class="art"><summary><span class="a">243Q</span>Every State must constitute municipalities</summary><div class="body"><p>Three categories, as above. Before 1993, State law could govern a town without any elected body.</p></div></details>
+          <details class="art"><summary><span class="a">243R</span>Councils elected directly from wards</summary><div class="body"><p>All seats are filled by direct election from territorial wards. State law may add MPs, MLAs and Wards Committee chairpersons, and nominated experts who cannot vote. The manner of electing the chairperson or mayor is left to the State.</p></div></details>
+          <details class="art"><summary><span class="a">243S</span>Wards Committees in cities of 3 lakh+</summary><div class="body"><p>Compulsory in municipalities with a population of three lakh or more; a committee may cover one or more wards. Composition and territorial area are left to State law. The 1989 Bill, as Rajiv Gandhi described it, would have required them from one lakh.</p></div></details>
+          <details class="art"><summary><span class="a">243T</span>Reservation for SCs, STs and women</summary><div class="body"><p>Seats for SCs and STs in proportion to population; not less than one-third of all seats for women. Rotation of reserved seats and reservation of chairpersons' posts are left to State law ("may").</p></div></details>
+          <details class="art"><summary><span class="a">243U</span>A fixed five-year term</summary><div class="body"><p>A municipality lasts five years. It must be heard before any dissolution, and a new election must be completed before the term ends or within six months of a dissolution. In <i>Suresh Mahajan</i> (2022) the Supreme Court called this mandate "inviolable".</p></div></details>
+          <details class="art"><summary><span class="a">243ZA</span>State Election Commissions run the polls</summary><div class="body"><p>Superintendence of electoral rolls and elections vests in the State Election Commission. Delimitation of wards is not assigned to it by the Constitution, and in many States the government retains that power.</p></div></details>
+          <details class="art"><summary><span class="a">243Y</span>A State Finance Commission every five years</summary><div class="body"><p>The SFC reviews municipal finances and recommends how State taxes and grants should be shared. The Governor must lay its report before the legislature with a memorandum on action taken. The recommendations are not binding.</p></div></details>
+          <details class="art"><summary><span class="a">243ZD</span>District Planning Committees</summary><div class="body"><p>In every district, to consolidate panchayat and municipal plans. At least four-fifths of members are elected from among elected local representatives, in proportion to the district's rural and urban population.</p></div></details>
+          <details class="art"><summary><span class="a">243ZE</span>Metropolitan Planning Committees</summary><div class="body"><p>In every metropolitan area (ten lakh or more), to prepare a draft development plan for the whole area. At least two-thirds of members are elected from among municipal councillors and panchayat chairpersons. The committee drafts plans; it has no executive power.</p></div></details>
+        </div>
+        <div class="col may">
+          <h4><span class="lbl lbl-may">may</span>What it leaves to the State legislature</h4>
+          <p class="small">Enabling provisions: the powers, money and accountability of municipalities.</p>
+          <details class="art" open><summary><span class="a">243W</span>Powers, functions and responsibilities</summary><div class="body"><p>The State legislature "may" endow municipalities with powers to function as institutions of self-government, including the preparation of plans and the performance of functions listed in the Twelfth Schedule, "subject to such conditions as may be specified" in its own law. The scope of a city government's powers is determined by each State.</p></div></details>
+          <details class="art"><summary><span class="a">243X</span>Taxes and funds</summary><div class="body"><p>The State "may" authorise municipalities to levy and collect taxes, duties, tolls and fees, assign them State taxes, and give grants. The Constitution guarantees municipalities no tax base of their own. The one explicit municipal tax, on professions, is capped by Article 276 at ₹2,500 a year.</p></div></details>
+          <details class="art"><summary><span class="a">243Z</span>Audit of accounts</summary><div class="body"><p>The State "may", by law, provide for maintenance and audit of municipal accounts. The 1991 Bill had provided for CAG audit of municipal corporations; the final text dropped it.</p></div></details>
+          <details class="art"><summary><span class="a">Not addressed</span>Staff, mayors' powers and tenure, parastatals</summary><div class="body"><p>Part IXA says nothing about who appoints and controls municipal staff, how long a mayor serves or what a mayor may decide, or how development authorities and water boards relate to the elected council. All of this sits in State law.</p></div></details>
+        </div>
+      </div>
+          <div class="sched">
+            <div class="sched-head"><h4>The Twelfth Schedule: 18 matters</h4><span class="lbl lbl-may">illustrative, not transferred</span></div>
+            <ol>
+              <li>Urban planning, including town planning</li>
+              <li>Regulation of land use and construction of buildings</li>
+              <li>Planning for economic and social development</li>
+              <li>Roads and bridges</li>
+              <li>Water supply for domestic, industrial and commercial use</li>
+              <li>Public health, sanitation, conservancy and solid waste management</li>
+              <li>Fire services</li>
+              <li>Urban forestry, environment and ecology</li>
+              <li>Safeguarding the interests of weaker sections of society</li>
+              <li>Slum improvement and upgradation</li>
+              <li>Urban poverty alleviation</li>
+              <li>Parks, gardens and playgrounds</li>
+              <li>Cultural, educational and aesthetic aspects</li>
+              <li>Burial and cremation grounds</li>
+              <li>Cattle pounds; prevention of cruelty to animals</li>
+              <li>Vital statistics, including births and deaths</li>
+              <li>Street lighting, parking, bus stops, public conveniences</li>
+              <li>Regulation of slaughter houses and tanneries</li>
+            </ol>
+            <p class="small" style="margin:12px 0 0">Short titles. Art. 243W lets State legislatures assign any or all of these; it does not assign them itself. Items 17 and 18 were added, and item 8 widened, by the 1992 Joint Committee.</p>
+          </div>
+    </div>
+    <p class="src reveal">Text of Part IXA: <a href="https://mohua.gov.in/upload/uploadfiles/files/ConsAct74.pdf">The Constitution (Seventy-fourth Amendment) Act, 1992 (MoHUA)</a>; <a href="https://www.constitutionofindia.net/articles/article-243w-powers-authority-and-responsibilities-of-municipalities-etc/">Article 243W</a>. The Act also inserted Article 280(3)(c), asking the Union Finance Commission to recommend measures to augment State funds for municipalities on the basis of SFC recommendations.</p>
+
+    <div class="callout reveal">
+      <div class="eyebrow">The constitutional settlement</div>
+      <p>The 74th Amendment guaranteed every city an elected council. The funds, functions and functionaries of that council were left to each State.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 4 ============ -->
+<section class="chapter" id="decades" aria-labelledby="c4">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div class="ch-num" aria-hidden="true">4</div>
+      <div>
+        <div class="eyebrow">Evidence from ASICS 2023</div>
+        <h2 id="c4">Three decades later: how much of the promise has been kept?</h2>
+        <p class="dek">Janaagraha's Annual Survey of India's City-Systems (ASICS) 2023 assessed urban laws in all 35 States and UTs. It describes implementation of the 74th Amendment as "a glass less than half-full."</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="prose reveal">
+        <p>ASICS 2023, the sixth edition of the survey, evaluates municipal acts, town and country planning acts and allied laws in 28 States and 7 Union Territories against 52 questions. The assessment period ran from December 2021 to December 2022, and the figures below refer to that period. Some have changed since; Mumbai elected a council in January 2026.</p>
+        <p>Most ASICS indicators assess what State laws provide. Figures that describe implementation are marked as such.</p>
+      </div>
+      <aside class="aside reveal">
+        <h4>What has been achieved</h4>
+        <p>Since 1993, elections, reservations and new local institutions have a constitutional basis, and courts have enforced it.</p>
+      </aside>
+    </div>
+
+    <div class="worked reveal">
+      <div><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><b>Representation</b>Women held 46% of seats in urban local governments, and 17 States had legislated 50% reservation, above the one-third the Constitution requires.<p class="src">ASICS 2023, as reported in Janaagraha, <a href="https://www.janaagraha.org/wp-content/uploads/2024/12/A-Roadmap-for-Indias-City-Systems-Reforms.pdf">A Roadmap for India's City-Systems Reforms</a> (Dec 2024), p. 30</p></div>
+      <div><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><b>A constitutional floor</b>Courts have enforced the mandatory provisions. In 2022, the Supreme Court held the five-year term "inviolable" and directed delayed elections to be notified across States.<p class="src"><i>Suresh Mahajan v. State of MP</i>, 10 May 2022, para 8 (<a href="https://livelaw.in/pdf_upload/463-suresh-mahajan-v-state-of-madhya-pradesh-10-may-2022-417147.pdf">order</a>)</p></div>
+      <div><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><b>New institutions</b>State Election Commissions, State Finance Commissions, Wards Committees and planning committees exist because of Part IXA. Their effectiveness varies widely across States.<p class="src">Constitution, Part IXA</p></div>
+    </div>
+
+    <div class="stats reveal" role="list">
+      <div class="stat" role="listitem"><div class="v">42%</div><div class="d">of the 74th Amendment implemented by States, on average</div><p class="src">ASICS 2023 report, p. 9. Janaagraha's assessment of State laws against the Amendment's provisions; a legal measure, not an outcome measure.</p></div>
+      <div class="stat" role="listitem"><div class="v">1,400+</div><div class="d">cities without elected mayors or councils, some for as long as nine years</div><p class="src">ASICS 2023 report, p. 9. Includes Bengaluru and Mumbai. Implementation, during the assessment period.</p></div>
+      <div class="stat" role="listitem"><div class="v">36%</div><div class="d">average vacancy in city governments</div><p class="src">ASICS 2023 report, p. 9. Share of sanctioned posts unfilled. Implementation.</p></div>
+      <div class="stat" role="listitem"><div class="v">~20%</div><div class="d">of municipal expenditure covered by property tax, cities' largest own revenue source</div><p class="src">ASICS 2023 report, p. 9. Implementation.</p></div>
+    </div>
+
+    <!-- Dimension: functions -->
+    <div class="dim reveal">
+      <div class="promise"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span><div class="k">Promise · Art. 243W</div><h4>Functions</h4><p>Municipalities able to plan and deliver the services in the Twelfth Schedule.</p></div>
+      <div class="ev">
+        <p>ASICS 2023 finds that the 74th Amendment "does not recognise 'city governments' as a distinct tier of government," and that six States devolve all 18 functions through "may" provisions that create no obligation. CAG audits of 393 urban local bodies in 18 States, published in 2024, show the gap between law and practice:</p>
+        <div class="bars18" role="img" aria-label="CAG 2024: on average 17 of 18 functions assigned in State law, about 4 under full municipal control, about 5 performed by parastatal agencies">
+          <div class="b18"><div class="lab">Assigned to municipalities in State law: <b>17 of 18</b> (average)</div><div class="sq" aria-hidden="true"></div></div>
+          <div class="b18"><div class="lab">Under full municipal control in practice: <b>about 4</b></div><div class="sq" aria-hidden="true"></div></div>
+          <div class="b18"><div class="lab">Performed by parastatal agencies: <b>about 5</b></div><div class="sq t" aria-hidden="true"></div></div>
+        </div>
+        <p class="src">ASICS 2023 report, p. 59 (based on CAG audits in 13 States). Bars: CAG, <a href="https://saiindia.gov.in/uploads/StudyReports/SR-Compendium-067346fdd7000e9-76046538.pdf">Compendium of Performance Audits on the 74th CAA</a> (Nov 2024), audit period roughly 2014–21. The CAG is a supplementary source; ASICS 2023 does not publish a national count of functions devolved.</p>
+      </div>
+    </div>
+
+    <!-- Dimension: finance -->
+    <div class="dim reveal">
+      <div class="promise"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span><div class="k">Promise · Arts. 243X, 243Y</div><h4>Finances</h4><p>Revenue powers, State Finance Commissions and predictable transfers.</p></div>
+      <div class="ev">
+        <p>Property tax, the largest own source of revenue for cities, covers about 20% of municipal expenditure. The rest depends on transfers from State governments and the Union. Only two States require cities to prepare medium-term fiscal plans.</p>
+        <div class="dots-row"><div class="lab">States/UTs mandating a Medium-Term Fiscal Plan for cities<span class="small">Legal provision · ASICS 2023 Data Book, Table 20</span></div><div class="dots" data-n="2" aria-hidden="true"></div><div class="cnt">2 of 35</div></div>
+        <p class="src">Assam and Karnataka, both through local fiscal responsibility laws. <a href="https://www.janaagraha.org/wp-content/uploads/2024/02/ASICS-2023-data-book.pdf">ASICS 2023 Data Book</a>. ASICS also recommends that action-taken reports on SFC recommendations be placed before the legislature within six months (report, p. 61).</p>
+      </div>
+    </div>
+
+    <!-- Dimension: staff -->
+    <div class="dim reveal">
+      <div class="promise"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><div class="k">Not in Part IXA</div><h4>Functionaries</h4><p>Control over the people who deliver municipal services.</p></div>
+      <div class="ev">
+        <p>Part IXA makes no provision for municipal staff. ASICS 2023 records a <span class="num">36%</span> average vacancy in city governments, with mayors and councils holding virtually no powers over the appointment, transfer or discipline of their staff.</p>
+        <div class="dots-row"><div class="lab">States/UTs mandating any training for municipal officials<span class="small">Legal provision · ASICS 2023 report, p. 9</span></div><div class="dots" data-n="14" aria-hidden="true"></div><div class="cnt">14 of 35</div></div>
+        <p class="src">Staff powers: ASICS 2023, as reported in the Janaagraha Roadmap (Dec 2024), p. 32.</p>
+      </div>
+    </div>
+
+    <!-- Dimension: leadership -->
+    <div class="dim reveal">
+      <div class="promise"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><div class="k">Left to State law · Art. 243R</div><h4>Elected leadership</h4><p>Mayors and councils with the authority and tenure to govern.</p></div>
+      <div class="ev">
+        <p>Only <span class="num">8</span> States and UTs had directly elected mayors (Bihar, Haryana, Jharkhand, Madhya Pradesh, Odisha, Puducherry, Uttar Pradesh, Uttarakhand). In most other States, councillors elect the mayor, often for a term of one to two and a half years, with executive power vested in a State-appointed commissioner.</p>
+        <div role="img" aria-label="93 million of 318 million urban residents lived in States or UTs with directly elected mayors, about 29 percent">
+          <div class="pbar"><span style="width:29.2%"></span></div>
+          <div class="pbar-l"><span>93 million urban residents had a directly elected mayor</span><span>318 million total</span></div>
+        </div>
+        <p class="src">ASICS 2023, as reported in the Janaagraha Roadmap (Dec 2024), p. 32. Mayoral tenure: "Fifty per cent of UTs do not have a mayor with a five-year tenure" (ASICS 2023 report, p. 38). State laws have changed since; Madhya Pradesh amended its municipal law again in 2025.</p>
+      </div>
+    </div>
+
+    <!-- Dimension: participation -->
+    <div class="dim reveal">
+      <div class="promise"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><div class="k">Promise · Art. 243S</div><h4>Citizen participation</h4><p>Wards Committees and a voice for residents between elections.</p></div>
+      <div class="ev">
+        <p>In ten of the 13 States analysed through CAG audits, one Wards Committee covers several wards, which ASICS finds undermines the intent of a committee for every ward. Mumbai's 227 electoral wards were grouped into 16 ward committees, each covering 8 to 20 wards.</p>
+        <div class="dots-row"><div class="lab">Community Participation Law enacted, with rules notified<span class="small">Requires ward committees and area sabhas · report, p. 9</span></div><div class="dots" data-n="5" aria-hidden="true"></div><div class="cnt">5 of 35</div></div>
+        <div class="dots-row"><div class="lab">Public consultation on city budgets mandated<span class="small">Legal provision · report, p. 9</span></div><div class="dots" data-n="3" aria-hidden="true"></div><div class="cnt">3 of 35</div></div>
+        <p class="src">ASICS 2023 report, pp. 9, 59. The 5 States had the law and rules on paper; per the Janaagraha Roadmap (p. 35), none had implemented ward committees and area sabhas as the law requires.</p>
+      </div>
+    </div>
+
+    <!-- Dimension: planning & accountability -->
+    <div class="dim reveal">
+      <div class="promise"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></span><div class="k">Promise · Arts. 243ZA, 243ZE</div><h4>Planning and accountability</h4><p>Integrated metropolitan planning, transparent finances, independent elections.</p></div>
+      <div class="ev">
+        <p>Of the 14 States that had notified rules for Metropolitan Planning Committees, only <span class="num">3</span> had constituted one, and none was functional. <span class="num">13</span> of 33 State and UT capitals (39%), including Delhi, Bengaluru, Bhopal and Dehradun, had no active master plan as of 30 March 2023.</p>
+        <div class="dots-row"><div class="lab">Public Disclosure Law enacted<span class="small">Legal provision · report, p. 9</span></div><div class="dots" data-n="11" aria-hidden="true"></div><div class="cnt">11 of 35</div></div>
+        <div class="dots-row"><div class="lab">State Election Commission empowered to delimit wards<span class="small">Legal provision · Roadmap, p. 29</span></div><div class="dots" data-n="11" aria-hidden="true"></div><div class="cnt">11 of 35</div></div>
+        <p class="src">ASICS 2023 report, pp. 9, 44, 64; SEC delimitation from ASICS 2023 as reported in the Janaagraha Roadmap (Dec 2024). Each dot is one State or UT; filled dots meet the condition.</p>
+      </div>
+    </div>
+
+    <div class="callout reveal">
+      <div class="eyebrow">Where cities stand</div>
+      <p>Municipalities are now permanent, elected and more representative institutions. In most States, their funds, functions and functionaries remain under State control.</p>
+    </div>
+    <p class="small reveal" style="max-width:70ch">Outcomes vary widely across States. The CAG found that municipalities in Maharashtra and Jharkhand fully control ten functions, and those in Odisha and Uttarakhand none. Kerala and Maharashtra have Wards Committees in every audited municipality. State legislation and political choices account for much of this variation.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 5 ============ -->
+<section class="chapter" id="promise" aria-labelledby="c5">
+  <div class="wrap">
+    <div class="ch-head reveal">
+      <div class="ch-num" aria-hidden="true">5</div>
+      <div>
+        <div class="eyebrow">The unfinished promise</div>
+        <h2 id="c5">Five big shifts for city-systems reform</h2>
+        <p class="dek">Janaagraha's 2026 report, Shaping Urban India: By Design, Not By Default, sets out the reforms India's cities need. State governments lead, with support from the Union government.</p>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="prose reveal">
+        <p>The report's central argument is that growth and liveability in Indian cities depend on each other, and that both are shaped by city-systems: planning and design, place-based empowered governance and state capacity. Its diagnosis matches the record of the 74th Amendment. Only about four of the 18 Twelfth Schedule functions have been effectively devolved across States. ULGs face a 42% gap between their revenues and their expenditure needs, with property tax rates set by State governments. Parastatals working in cities neither report to elected city governments nor include elected representatives on their boards.</p>
+        <p>The report holds that the constitutional framework for city government already exists. What is required is political commitment, institutional reform and sustained citizen engagement, with State governments creating the enabling conditions for reform now.</p>
+        <p class="src">Shaping Urban India, pp. 9&ndash;11 (executive summary), 50&ndash;52 (diagnosis)</p>
+      </div>
+      <aside class="aside reveal">
+        <h4>About the report</h4>
+        <p>Published in 2026 by Janaagraha with the Jana Urban Space Foundation. Its recommendations are set out as five big shifts to catalyse city-systems reform.</p>
+        <p class="src"><a href="https://www.janausp.org/wp-content/uploads/2026/04/Shaping-Urban-India.pdf">Read the report</a></p>
+      </aside>
+    </div>
+
+    <ol class="reforms">
+      <li class="reveal"><div><h4>Invest significantly in walkability and public transport</h4><p>Congestion, the growth of private vehicles and weak public and non-motorised transport call for people-centric mobility within and between cities. A mission-mode programme for walkable roads can begin the shift. Only 15 cities have set up Unified Metropolitan Transport Authorities, and most remain largely absent or nominal.</p><p class="src">pp. 10, 52&ndash;55</p></div><div class="route"><span class="r"><span class="lbl lbl-note">Who acts</span></span><span class="r">Elected city governments</span><span class="r">Unified Metropolitan Transport Authorities</span></div></li>
+      <li class="reveal"><div><h4>Implement City Action Plans in medium and small cities</h4><p>Responsibility for a city is divided across departments, with no single body accountable for outcomes. A City Action Plan treats the city as one place. It identifies local priorities through ward-level consultation, converges agencies around them and directs Union, State and local funds to them.</p><p class="src">p. 10</p></div><div class="route"><span class="r"><span class="lbl lbl-note">Who acts</span></span><span class="r">City governments, with Union, State and local funds converged on the plan</span></div></li>
+      <li class="reveal"><div><h4>Adopt differentiated planning and governance models for different types of cities</h4><p>Metropolitan cities, large and medium cities, small towns and transitioning towns need models suited to their scale, economic potential, liveability needs and capacity. The Ministry of Housing and Urban Affairs and State departments should shift their focus from infrastructure and service delivery to helping city governments adopt place-based governance.</p><p class="src">p. 10</p></div><div class="route"><span class="r"><span class="lbl lbl-note">Who acts</span></span><span class="r">Ministry of Housing and Urban Affairs</span><span class="r">State urban development departments</span></div></li>
+      <li class="reveal"><div><h4>Build and use city-level data systems for governance</h4><p>City data should be available, accessible, usable and reliable. City governments need the capacity to translate data into planning insights and to track growth and liveability outcomes over time, beyond administrative metrics.</p><p class="src">p. 10</p></div><div class="route"><span class="r"><span class="lbl lbl-note">Who acts</span></span><span class="r">City governments</span></div></li>
+      <li class="reveal"><div><h4>Recognise ULGs as governments of the city</h4><p>ULGs function today mainly as nodal agencies for Union and State mandates, which falls short of the vision of the 74th Amendment. They should be decentralised, democratic and participatory, with the capacity and accountability to govern. Devolution of funds, functions and functionaries is the central agenda, beginning with timely local elections and capacity-building for councillors and mayors.</p><p class="src">p. 11</p></div><div class="route"><span class="r"><span class="lbl lbl-note">Who acts</span></span><span class="r">State governments, with support from the Union government</span></div></li>
+    </ol>
+    <p class="src reveal">All recommendations in this chapter are taken from <a href="https://www.janausp.org/wp-content/uploads/2026/04/Shaping-Urban-India.pdf">Shaping Urban India: By Design, Not By Default</a> (Janaagraha and Jana Urban Space Foundation, 2026), as summarised in its executive summary. The report's detailed chapter on the five shifts (Chapter 9, pp. 115&ndash;129) could not be read in the digital copy used for this project.</p>
+
+    <div class="callout reveal">
+      <div class="eyebrow">The decade ahead</div>
+      <p>At least 723 million Indians will live in cities by 2050. The decisions of the next decade will determine whether that growth happens by design or by default.</p>
+    </div>
+    <p class="src reveal">Shaping Urban India, p. 11</p>
+  </div>
+</section>
+
+<section class="finale" aria-labelledby="c6">
+  <div class="fin-panel">
+    <div class="eyebrow">Constitution Day reflection</div>
+    <h2 id="c6">The Unfinished Promise of Local Self-Government</h2>
+  </div>
+  <div class="fin-body">
+    <p>The Constituent Assembly accepted local self-government as a principle in 1948 and placed it among the Directive Principles. Parliament guaranteed elected councils in 1992, with fixed terms and reserved seats for women, Scheduled Castes and Scheduled Tribes, and left their powers to the States.</p>
+    <p>Thirty-three years on, councillors in most Indian cities have no authority over the water board, the development authority, municipal staff or the city's share of State revenue. Residents bring complaints about drainage and water supply to the councillor they elected, who often lacks the powers and funds to resolve them.</p>
+    <p class="last">The 74th Amendment began the work of building city governments in India. Completing it means giving the institutions closest to citizens the funds, functions and functionaries to govern, with clear accountability for results. That is the unfinished constitutional task before India's cities.</p>
+  </div>
+</section>
+
+<section class="sources" id="sources" aria-labelledby="src-h">
+  <div class="wrap">
+    <h2 id="src-h">Sources and methodology</h2>
+    <p class="prose">This project draws on a small number of primary documents, read where possible in their original scanned form on the Parliament Digital Library. Column numbers marked "c." are approximate, and quotations should be checked against the printed page before reuse. Where exact wording could not be verified, the text paraphrases.</p>
+    <div class="srcgrid">
+      <div>
+        <h3>Constituent Assembly</h3>
+        <ul>
+          <li>Constituent Assembly Debates, Vol. VII: <a href="https://eparlib.sansad.in/bitstream/123456789/762998/1/cad_05-11-1948.pdf">5 Nov 1948</a>, <a href="https://eparlib.sansad.in/bitstream/123456789/762999/1/cad_06-11-1948.pdf">6 Nov 1948</a>, <a href="https://eparlib.sansad.in/bitstream/123456789/763002/1/cad_09-11-1948.pdf">9 Nov 1948</a>, <a href="https://eparlib.sansad.in/bitstream/123456789/763030/1/cad_22-11-1948.pdf">22 Nov 1948</a></li>
+          <li>Transcriptions on constitutionofindia.net: <a href="https://www.constitutionofindia.net/debates/04-nov-1948/">4 Nov 1948</a>, <a href="https://www.constitutionofindia.net/debates/08-nov-1948/">8 Nov 1948</a>, <a href="https://www.constitutionofindia.net/debates/17-nov-1948/">17 Nov 1948</a>, <a href="https://www.constitutionofindia.net/debates/24-nov-1949/">24 Nov 1949</a></li>
+          <li>Debate on Draft Article 256 (profession tax), 9 Aug 1949: <a href="https://future.indiankanoon.org/doc/128766/">reproduction</a></li>
+        </ul>
+        <h3>Parliament, 1989–1992</h3>
+        <ul>
+          <li>Lok Sabha debates: <a href="https://eparlib.nic.in/bitstream/123456789/820420/1/08_XIII_15-05-1989_p20_p69_PII.pdf">15 May 1989</a>, <a href="https://eparlib.nic.in/bitstream/123456789/808988/1/pms_08_14_07-08-1989.pdf">7 Aug 1989</a>, <a href="https://eparlib.sansad.in/bitstream/123456789/8989/1/10_I_16091991_p49_p55_t31.pdf">16 Sept 1991</a>, <a href="https://eparlib.nic.in/bitstream/123456789/824320/1/10_II_20-12-1991_p557_p559_PII.pdf">20 Dec 1991</a></li>
+          <li>Lok Sabha debates, December 1992: <a href="https://eparlib.sansad.in/bitstream/123456789/883134/1/10_V_01-12-1992_p362_p367_PII.pdf">1 Dec (i)</a>, <a href="https://eparlib.sansad.in/bitstream/123456789/883137/1/10_V_01-12-1992_p372_p376_PII.pdf">1 Dec (ii)</a>, <a href="https://eparlib.nic.in/bitstream/123456789/824432/1/10_V_21-12-1992_p347_p361_PII.pdf">21 Dec</a>, <a href="https://eparlib.nic.in/bitstream/123456789/823677/1/10_V_22-12-1992_p364_p408_PII.pdf">22 Dec</a></li>
+          <li><a href="https://eparlib.sansad.in/bitstream/123456789/757718/1/jcb_10_1992_constitution_73rd_amendment_eng.pdf">Report of the Joint Committee on the Constitution (Seventy-Third Amendment) Bill, 1991</a> (urban), 14 July 1992</li>
+          <li><a href="https://eparlib.sansad.in/bitstream/123456789/757889/1/jcb_10_1992_constitution_72th_amendment_eng.pdf">Report of the Joint Committee on the Constitution (Seventy-Second Amendment) Bill, 1991</a> (rural): could not be opened for this project; described here only from the Lok Sabha record and the committee's <a href="https://eparlib.sansad.in/bitstream/123456789/2992048/1/CB-II_JOINT_COMMITTE_BILL_CA_72_1991.pdf">evidence volume</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Constitutional text</h3>
+        <ul>
+          <li><a href="https://mohua.gov.in/upload/uploadfiles/files/ConsAct74.pdf">The Constitution (Seventy-fourth Amendment) Act, 1992</a> (MoHUA)</li>
+          <li><a href="https://www.constitutionofindia.net/parts/part-ixa/">Part IXA</a> on constitutionofindia.net</li>
+        </ul>
+        <h3>Evidence since 1993</h3>
+        <ul>
+          <li>Janaagraha, <a href="https://www.janaagraha.org/wp-content/uploads/2024/03/ASICS-2023-report.pdf">Annual Survey of India's City-Systems 2023</a> (assessment period Dec 2021 to Dec 2022) and <a href="https://www.janaagraha.org/wp-content/uploads/2024/02/ASICS-2023-data-book.pdf">ASICS 2023 Data Book</a></li>
+          <li>Janaagraha, <a href="https://www.janaagraha.org/wp-content/uploads/2024/12/A-Roadmap-for-Indias-City-Systems-Reforms.pdf">A Roadmap for India's City-Systems Reforms</a> (Dec 2024), used for ASICS 2023 figures not stated in the main report</li>
+          <li>Comptroller and Auditor General, <a href="https://saiindia.gov.in/uploads/StudyReports/SR-Compendium-067346fdd7000e9-76046538.pdf">Compendium of Performance Audits on the 74th CAA</a> (Nov 2024)</li>
+          <li><a href="https://livelaw.in/pdf_upload/463-suresh-mahajan-v-state-of-madhya-pradesh-10-may-2022-417147.pdf"><i>Suresh Mahajan v. State of Madhya Pradesh</i></a>, Supreme Court, 10 May 2022</li>
+          <li>Janaagraha and Jana Urban Space Foundation, <a href="https://www.janausp.org/wp-content/uploads/2026/04/Shaping-Urban-India.pdf">Shaping Urban India: By Design, Not By Default</a> (2026), source of all recommendations in chapter 5</li>
+        </ul>
+        <h3>What could not be verified</h3>
+        <ul>
+          <li>The Rajya Sabha debates of August 1989 (including Murasoli Maran's speech) and of 23 December 1992.</li>
+          <li>The number and full text of the 1990 National Front Bill.</li>
+          <li>The phrase "schools of democracy", often attributed to N.G. Ranga, does not appear in his 9 November 1948 speech, so it is not used.</li>
+          <li>No record was found of R.K. Sidhwa or Brajeshwar Prasad debating local bodies as a "third tier" in August 1949.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A personal public-interest project for Constitution Day, 26 November 2026, by Soumyadeep Chatterjee. Views are personal. ASICS data © Janaagraha Centre for Citizenship and Democracy, cited with attribution.</p>
+  </div>
+</footer>
+
+<script>
+document.body.classList.remove('no-js');
+
+/* ---------- Timeline data ---------- */
+var EVENTS = [
+ {y:1946, date:'9 Dec 1946 – 26 Nov 1949', short:'Constituent Assembly', title:'The Constituent Assembly sits',
+  body:'The Assembly drafts a Constitution built on two levels of government, the Union and the provinces, with rights vested in individual citizens. Local government is not part of the original draft.',
+  who:'Constituent Assembly of India', src:'Constituent Assembly Debates', href:'#beginning'},
+ {y:1948.84, date:'4–9 Nov 1948', short:'The village debated', title:'The village debate',
+  body:'Moving the Draft Constitution, B.R. Ambedkar welcomes its choice of the individual over the village as the unit. Members respond over the following days: some argue for a Republic built on village republics, others warn that panchayats could be captured by local elites.',
+  who:'B.R. Ambedkar, Damodar Swarup Seth, Arun Chandra Guha, Mono Mohan Das, N.G. Ranga', src:'CAD Vol. VII, 4–9 Nov 1948', href:'#beginning'},
+ {y:1948.89, date:'22 Nov 1948', short:'Article 31-A adopted', title:'Village panchayats enter the Directive Principles',
+  body:'K. Santhanam moves Draft Article 31-A asking the State to organise village panchayats as units of self-government. Ambedkar accepts it the same day. It becomes Article 40, a Directive Principle that courts cannot enforce.',
+  who:'K. Santhanam, B.R. Ambedkar', src:'CAD Vol. VII p. 520', href:'#beginning'},
+ {y:1950.07, date:'26 Jan 1950', short:'Article 40 in force', title:'The Constitution comes into force',
+  body:'Article 40 directs the State to organise panchayats. Local government is Entry 5 of the State List. Municipalities receive no constitutional status and remain creations of State law.',
+  who:'Constitution of India', src:'Article 40; Seventh Schedule, List II, Entry 5', href:'#beginning'},
+ {y:1957, date:'1957 – 1980s', short:'Panchayati Raj', title:'Decentralisation by statute',
+  body:'The Balwantrai Mehta study team (1957) recommends democratic decentralisation and States set up Panchayati Raj bodies. Over the following decades, panchayats and municipalities face postponed elections, supersession and declining finances.',
+  who:'Balwantrai Mehta study team; later committees', src:'Secondary accounts; Joint Committee report 1992, ch. II', href:'#road'},
+ {y:1989.37, date:'15 May & 7 Aug 1989', short:'64th & 65th Bills', title:'Rajiv Gandhi introduces two amendment Bills',
+  body:'The 64th Amendment Bill (panchayats) and 65th Amendment Bill (Nagarpalikas) propose fixed terms, regular elections, reservations and finance commissions. Opposition parties object that the design gives the Union a direct channel to local bodies that bypasses the States.',
+  who:'Rajiv Gandhi', src:'Lok Sabha debates, 15 May and 7 Aug 1989', href:'#road'},
+ {y:1989.78, date:'October 1989', short:'Defeated in Rajya Sabha', title:'Three votes short',
+  body:'Both Bills pass the Lok Sabha but fail to win a two-thirds majority in the Rajya Sabha. Press reports put the votes at 158–83 and 157–83.',
+  who:'Rajya Sabha', src:'PTI report, October 1989', href:'#road'},
+ {y:1990.68, date:'September 1990', short:'National Front Bill', title:'The National Front Bill lapses',
+  body:'The V.P. Singh government introduces one combined Bill for panchayats and Nagarpalikas. The government falls in November 1990 and the Bill lapses when the Lok Sabha is dissolved in 1991.',
+  who:'V.P. Singh government', src:'Lok Sabha Business Advisory Committee, 1990; secondary accounts', href:'#road'},
+ {y:1991.71, date:'16 Sept 1991', short:'1991 Bills introduced', title:'The 1991 Bills',
+  body:'The Constitution (72nd Amendment) Bill on panchayats and the (73rd Amendment) Bill on municipalities are introduced, and in December sent to Joint Committees of both Houses.',
+  who:'G. Venkatswamy, Sheila Kaul', src:'Lok Sabha, 16 Sept and 20 Dec 1991', href:'#road'},
+ {y:1992.53, date:'14 July 1992', short:'Joint Committees report', title:'Joint Committees report',
+  body:'The urban committee, chaired by K.P. Singh Deo, adds District and Metropolitan Planning Committees, mandatory Wards Committees for cities of three lakh or more, and a Union Finance Commission role. S. Viduthalai Virumbi dissents on federal grounds.',
+  who:'K.P. Singh Deo; Nathu Ram Mirdha (rural committee)', src:'Joint Committee report, 14 July 1992', href:'#road'},
+ {y:1992.97, date:'1–23 Dec 1992', short:'Parliament passes', title:'Parliament passes both Bills',
+  body:'The Lok Sabha votes 452–1 to take up the panchayat Bill on 21 December and passes both Bills on 22 December; the Rajya Sabha follows on 23 December. State Election Commissions and audit under State law replace the 1989 roles for national bodies.',
+  who:'P.V. Narasimha Rao, G. Venkatswamy, Sheila Kaul', src:'Lok Sabha debates, 1, 21, 22 Dec 1992', href:'#road'},
+ {y:1993.31, date:'24 Apr 1993', short:'73rd in force', title:'Panchayats become constitutional',
+  body:'After presidential assent on 20 April, the 73rd Amendment (Part IX, Eleventh Schedule) comes into force.',
+  who:'President of India', src:'The Constitution (Seventy-third Amendment) Act, 1992', href:'#amendment'},
+ {y:1993.42, date:'1 June 1993', short:'74th in force', title:'Municipalities become constitutional',
+  body:'Part IXA and the Twelfth Schedule come into force. Elections, terms and reservations are guaranteed. Powers, taxes and functions are left to State legislatures.',
+  who:'Ministry of Urban Development', src:'The Constitution (Seventy-fourth Amendment) Act, 1992', href:'#amendment'},
+ {y:2022.36, date:'10 May 2022', short:'"Inviolable"', title:'The Supreme Court on delayed elections',
+  body:'In Suresh Mahajan, the Court calls the five-year term of local bodies an inviolable constitutional mandate and orders delayed polls to be notified, noting that more than 23,000 local bodies in Madhya Pradesh lacked elected representatives.',
+  who:'Supreme Court of India', src:'Suresh Mahajan v. State of MP (2022)', href:'#decades'},
+ {y:2023.5, date:'Dec 2021 – Dec 2022', short:'ASICS 2023', title:'ASICS 2023',
+  body:'Janaagraha\'s sixth Annual Survey of India\'s City-Systems assesses urban laws in all 35 States and UTs and finds that, on average, 42% of the 74th Amendment has been implemented.',
+  who:'Janaagraha', src:'ASICS 2023 report, p. 9', href:'#decades'},
+ {y:2026.9, date:'26 Nov 2026', short:'Constitution Day', title:'Constitution Day 2026',
+  body:'Thirty-three years after Part IXA came into force, the question is whether the constitutional settlement gives cities what they need to function as institutions of self-government.',
+  who:'', src:'', href:'#promise'}
+];
+
+var Y0 = 1946, Y1 = 2027;
+function pct(y){ return ((y - Y0) / (Y1 - Y0) * 100).toFixed(2) + '%'; }
+
+var axis = document.getElementById('axis'), strip = document.getElementById('strip'), panel = document.getElementById('panel');
+var html = '<div class="line"></div><div class="era" style="left:'+pct(1989.3)+';width:calc('+pct(1993.5)+' - '+pct(1989.3)+')"></div>';
+[1950,1960,1970,1980,1990,2000,2010,2020].forEach(function(t){ html += '<span class="tick" style="left:'+pct(t)+'">'+t+'</span>'; });
+axis.innerHTML = html;
+
+EVENTS.forEach(function(e, i){
+  var d = document.createElement('button');
+  d.className = 'dot'; d.type = 'button'; d.tabIndex = -1; d.style.left = pct(e.y);
+  d.addEventListener('click', function(){ select(i, true); });
+  axis.appendChild(d);
+  var b = document.createElement('button');
+  b.className = 'chip'; b.type = 'button'; b.setAttribute('aria-pressed', 'false');
+  b.setAttribute('aria-controls', 'panel');
+  b.innerHTML = '<span class="y">' + Math.floor(e.y) + '</span><span class="t">' + e.short + '</span>';
+  b.addEventListener('click', function(){ select(i, false); });
+  strip.appendChild(b);
+});
+
+var cur = 0;
+function select(i, scrollChip){
+  cur = i; var e = EVENTS[i];
+  Array.prototype.forEach.call(strip.children, function(c, k){ c.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+  Array.prototype.forEach.call(axis.querySelectorAll('.dot'), function(c, k){ c.classList.toggle('on', k === i); });
+  panel.innerHTML = '<div class="pd">' + e.date + '</div><div><h3>' + e.title + '</h3><p>' + e.body + '</p>' +
+    (e.who ? '<p class="who"><b>Who:</b> ' + e.who + '</p>' : '') +
+    (e.src ? '<p class="src">Source: ' + e.src + ' · <a href="' + e.href + '">Read the chapter</a></p>' : '<p class="src"><a href="' + e.href + '">Read the final chapter</a></p>') + '</div>';
+  var chip = strip.children[i];
+  strip.scrollTo({left: chip.offsetLeft - strip.offsetLeft - strip.clientWidth/2 + chip.clientWidth/2, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+}
+document.getElementById('tl-prev').addEventListener('click', function(){ select((cur - 1 + EVENTS.length) % EVENTS.length); strip.children[cur].focus({preventScroll:true}); });
+document.getElementById('tl-next').addEventListener('click', function(){ select((cur + 1) % EVENTS.length); strip.children[cur].focus({preventScroll:true}); });
+strip.addEventListener('keydown', function(ev){
+  if (ev.key === 'ArrowRight' || ev.key === 'ArrowLeft') {
+    ev.preventDefault();
+    var n = ev.key === 'ArrowRight' ? Math.min(cur + 1, EVENTS.length - 1) : Math.max(cur - 1, 0);
+    select(n); strip.children[n].focus({preventScroll:true});
+  }
+});
+select(1);
+
+/* ---------- Dot matrices and square bars ---------- */
+Array.prototype.forEach.call(document.querySelectorAll('.dots'), function(el){
+  var n = +el.getAttribute('data-n'), s = '';
+  for (var i = 0; i < 35; i++) s += '<i class="' + (i < n ? 'f' : '') + '"></i>';
+  el.innerHTML = s;
+});
+var fills = [17, 4, 5];
+Array.prototype.forEach.call(document.querySelectorAll('.sq'), function(el, k){
+  var s = '';
+  for (var i = 0; i < 18; i++) s += '<i class="' + (i < fills[k] ? 'f' : '') + '"></i>';
+  el.innerHTML = s;
+});
+
+/* ---------- Active nav ---------- */
+var links = document.querySelectorAll('.nav a.lnk');
+var secs = Array.prototype.map.call(links, function(a){ return document.querySelector(a.getAttribute('href')); });
+if ('IntersectionObserver' in window) {
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) {
+        var id = '#' + en.target.id;
+        Array.prototype.forEach.call(links, function(a){
+          var on = a.getAttribute('href') === id;
+          if (on) { a.setAttribute('aria-current', 'true'); var ul = a.closest('ul'); ul.scrollLeft = a.parentNode.offsetLeft - ul.offsetLeft - ul.clientWidth/2 + a.offsetWidth/2; } else a.removeAttribute('aria-current');
+        });
+      }
+    });
+  }, {rootMargin: '-45% 0px -50% 0px'});
+  secs.forEach(function(s){ if (s) io.observe(s); });
+
+  var rv = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); rv.unobserve(en.target); } });
+  }, {rootMargin: '0px 0px -8% 0px'});
+  Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function(el){ rv.observe(el); });
+} else {
+  Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function(el){ el.classList.add('in'); });
+}
+</script>
+</body>
+</html>
